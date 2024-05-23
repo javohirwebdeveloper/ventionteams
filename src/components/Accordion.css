@@ -1,0 +1,38 @@
+.accordion-container {
+  display: flex;
+}
+
+.accordion-item {
+  overflow: hidden;
+  transition: max-width 0.5s ease;
+  max-width: 300px;
+ padding-top: 35px;
+  padding-left: 30px;
+}
+
+.accordion-item.expanded {
+  width: 860px; 
+  padding-left: 30px;
+padding-top: 35px;
+}
+
+.accordion-title {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-content { max-width: 600px;
+  overflow: hidden;
+  transition: max-width 0.5s ease;
+ 
+}
+ .accordion-content{
+    visibility: hidden;
+}
+.accordion-item.expanded  .accordion-content {
+    visibility: visible;
+  max-width: 800px;
+}
+.accordion-item.expanded {
+    max-width: 980px;
+}

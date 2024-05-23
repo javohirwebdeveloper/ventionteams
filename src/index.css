@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'system-font';
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-icon {
+  animation: blink 2s linear infinite;
+}
+.box {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 233.5px),calc(100% - 230px) calc(100% - 230px),calc(100% - 453.5px) 100%,0 100%);
+}
+
+.font {
+    font-family: var(--my-font);
+}
+:root {
+    --my-font: '__fonts_0adcfd', '__fonts_Fallback_0adcfd', -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.section1 {
+    background-image: url('https://cdn.vector.com/_processed_/5/4/csm_CAN_VN89_stage_news_Dietenmeier_2022_VI-R_10392-35321-2022-12-08_b_6f0d635f33.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box2 {
+clip-path: polygon(79% 59%, 100% 59%, 100% 100%, 55% 100%);
+}
+.box3 {
+clip-path: polygon(0 0, 100% 0, 100% 59%, 0 59%);
+
+}
